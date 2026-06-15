@@ -1,0 +1,255 @@
+# SANS 10400-T Fire Safety Standards Mapping
+# South African fire compliance standards hierarchy
+
+headline_standard:
+  code: "SANS 10400-T"
+  title: "The Application of the National Building Regulations - Part T: Fire Safety"
+  version: "2011"
+  authority: "SABS (South African Bureau of Standards)"
+  description: "Principal fire safety regulation for buildings in South Africa"
+
+sub_standards:
+  - code: "SANS 10400-T (Section 1)"
+    title: "Scope and General Principles"
+    clauses:
+      - id: "1.1"
+        description: "Application to all new buildings and alterations"
+        life_safety_critical: true
+        mandatory: true
+      - id: "1.2"
+        description: "Compliance through deemed-to-satisfy provisions or performance-based design"
+        life_safety_critical: false
+        mandatory: true
+
+  - code: "SANS 10400-T (Section 2)"
+    title: "Fire Safety Requirements by Occupancy"
+    clauses:
+      - id: "2.1"
+        description: "Building Occupancy Classification (A1-H4)"
+        life_safety_critical: true
+        mandatory: true
+        related_standards:
+          - "SANS 1475-1"
+          - "SANS 1475-2"
+          - "SANS 1475-3"
+      - id: "2.2"
+        description: "Occupant Load Calculations"
+        life_safety_critical: true
+        mandatory: true
+      - id: "2.3"
+        description: "Refuge Areas and Assembly Points"
+        life_safety_critical: true
+        mandatory: false
+        occupancy_classes:
+          - "A2"
+          - "A3"
+          - "B"
+          - "F"
+
+  - code: "SANS 10400-T (Section 3)"
+    title: "Fire Detection and Alarm Systems"
+    clauses:
+      - id: "3.1"
+        description: "Automatic Fire Detection Systems"
+        life_safety_critical: true
+        mandatory: true
+        occupancy_classes:
+          - "A1"
+          - "A2"
+          - "A3"
+          - "B"
+          - "C"
+          - "D"
+        related_standards:
+          - "SANS 10177-1"
+          - "SANS 10177-2"
+      - id: "3.2"
+        description: "Manual Fire Alarm Systems"
+        life_safety_critical: true
+        mandatory: true
+      - id: "3.3"
+        description: "Voice Alarm Systems for Large Buildings"
+        life_safety_critical: true
+        mandatory: false
+        occupancy_classes:
+          - "A1"
+          - "A2"
+          - "B"
+          - "D"
+
+  - code: "SANS 10400-T (Section 4)"
+    title: "Fire Suppression Systems"
+    clauses:
+      - id: "4.1"
+        description: "Automatic Sprinkler Systems"
+        life_safety_critical: true
+        mandatory: true
+        occupancy_classes:
+          - "A1"
+          - "A2"
+          - "A3"
+          - "B"
+          - "C"
+          - "D"
+          - "E"
+          - "F"
+        related_standards:
+          - "SANS 10400-T:2011 Clause 4.1"
+          - "ASIB Standards"
+          - "ISO 6182"
+      - id: "4.2"
+        description: "Manual Fire-Fighting Equipment (Extinguishers, Hose Reels)"
+        life_safety_critical: true
+        mandatory: true
+        occupancy_classes:
+          - "A1"
+          - "A2"
+          - "A3"
+          - "B"
+          - "C"
+          - "D"
+          - "E"
+          - "F"
+        related_standards:
+          - "SANS 1475-1"
+          - "SANS 1475-2"
+          - "SANS 1475-3"
+      - id: "4.3"
+        description: "Gas Suppression Systems"
+        life_safety_critical: true
+        mandatory: false
+        occupancy_classes:
+          - "D"
+          - "E"
+          - "F"
+
+  - code: "SANS 10400-T (Section 5)"
+    title: "Means of Escape"
+    clauses:
+      - id: "5.1"
+        description: "Exit Requirements and Signage"
+        life_safety_critical: true
+        mandatory: true
+      - id: "5.2"
+        description: "Emergency Lighting"
+        life_safety_critical: true
+        mandatory: true
+      - id: "5.3"
+        description: "Travel Distance and Exit Width"
+        life_safety_critical: true
+        mandatory: true
+
+  - code: "SANS 10400-T (Section 6)"
+    title: "Fire Resistance and Fire Stopping"
+    clauses:
+      - id: "6.1"
+        description: "Fire-Resistance Ratings for Building Elements"
+        life_safety_critical: true
+        mandatory: true
+      - id: "6.2"
+        description: "Compartmentation and Fire Barriers"
+        life_safety_critical: true
+        mandatory: true
+      - id: "6.3"
+        description: "Fire Stopping and Penetrations"
+        life_safety_critical: true
+        mandatory: true
+
+  - code: "SANS 10400-T (Section 7)"
+    title: "Fire Safety Signs and Markings"
+    clauses:
+      - id: "7.1"
+        description: "Location and Visibility of Fire Safety Signs"
+        life_safety_critical: false
+        mandatory: true
+      - id: "7.2"
+        description: "Maintenance and Illumination of Signs"
+        life_safety_critical: false
+        mandatory: true
+
+  - code: "SANS 10400-T (Section 8)"
+    title: "Fire Safety Management and Maintenance"
+    clauses:
+      - id: "8.1"
+        description: "Fire Safety Plan and Procedures"
+        life_safety_critical: true
+        mandatory: true
+      - id: "8.2"
+        description: "Regular Maintenance and Testing"
+        life_safety_critical: true
+        mandatory: true
+        renewal_frequency_months: 12
+        renewal_standard: "SANS 10400-T Certificate of Compliance"
+      - id: "8.3"
+        description: "Training and Drills"
+        life_safety_critical: false
+        mandatory: true
+
+  - code: "SANS 10400-T (Section 9)"
+    title: "Special Occupancies"
+    clauses:
+      - id: "9.1"
+        description: "Hazardous Substances Storage"
+        life_safety_critical: true
+        mandatory: false
+      - id: "9.2"
+        description: "Healthcare Facilities"
+        life_safety_critical: true
+        mandatory: false
+      - id: "9.3"
+        description: "Educational Facilities"
+        life_safety_critical: true
+        mandatory: false
+
+  - code: "SANS 10400-T (Section 10)"
+    title: "Existing Buildings and Retrofits"
+    clauses:
+      - id: "10.1"
+        description: "Retrospective Compliance Requirements"
+        life_safety_critical: true
+        mandatory: false
+      - id: "10.2"
+        description: "Phased Implementation Schedules"
+        life_safety_critical: true
+        mandatory: false
+
+cross_referenced_standards:
+  - code: "SANS 1475-1"
+    title: "Portable Fire Extinguishers - Part 1: Selection and Installation"
+    authority: "SABS"
+    applicability: "Mandatory for all buildings with fire suppression requirements"
+  
+  - code: "SANS 1475-2"
+    title: "Portable Fire Extinguishers - Part 2: Performance and Safety Requirements"
+    authority: "SABS"
+    applicability: "Mandatory for all buildings with fire suppression requirements"
+  
+  - code: "SANS 1475-3"
+    title: "Hose Reels and Connection Kits for Fire-Fighting Purposes"
+    authority: "SABS"
+    applicability: "Mandatory for buildings > 2000m² or high-risk occupancies"
+  
+  - code: "SANS 10177-1"
+    title: "Fire Detection and Alarm Systems - Part 1: General Requirements"
+    authority: "SABS"
+    applicability: "Mandatory for A-class and B-class buildings"
+  
+  - code: "SANS 10177-2"
+    title: "Fire Detection and Alarm Systems - Part 2: Components and Installation"
+    authority: "SABS"
+    applicability: "Mandatory for A-class and B-class buildings"
+  
+  - code: "ASIB Guidelines"
+    title: "Association of Sprinkler Installation Bodies Standards"
+    authority: "ASIB (South Africa)"
+    applicability: "Mandatory for all sprinkler system installations"
+  
+  - code: "ISO 6182"
+    title: "Water-Based Fire Suppression Systems - General Requirements and Test Methods"
+    authority: "ISO"
+    applicability: "Referenced for technical specifications"
+  
+  - code: "NFPA 72"
+    title: "National Fire Alarm and Signaling Code (referenced in some SA installations)"
+    authority: "NFPA"
+    applicability: "Optional; some facilities follow NFPA standards"
